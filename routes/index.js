@@ -6,4 +6,20 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/AboutMe', (req, res, next) => {
+  res.render('AboutMe', { age: 18 });
+});
+
+router.get('/Projects', (req, res, next) => {
+  res.render('Projects', {});
+});
+
+router.get('/Services', (req, res, next) => {
+  res.render('Services', {});
+});
+
+router.get('/ContactMe', (req, res, next) => {
+  res.render('ContactMe', {});
+});
+
 module.exports = router;
